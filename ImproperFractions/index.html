@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<title>Linden Test - Fractions</title>
+		<meta charset = "UTF-8" />
+	</head>
+	<body>
+		<form id = "main-form">
+			<h3>Improper Fractions</h3>
+			<hr/>
+			<div id = "left-panel" style = "width: 50%; float: left;" >
+				<fieldset style = "height: 100px;">
+					<legend>Input</legend>
+					Numerator
+					<input type = "number" id = "txt-numerator" required = "true" pattern = "\d+" />
+					<br>
+					Denominator
+					<input type = "number" id = "txt-denominator" required = "true" pattern = "\d+" />
+					<br>
+					<input type = "button" id = "btn-draw" onclick = "calculateFraction()" value= "Draw..." />
+				</fieldset>
+			</div>
+			<div id = "right-panel" style = "width: 50%; float: right;" >
+				<fieldset style = "height: 100px;">
+					<legend>Output</legend>
+					Mixed Fraction:
+					<label id = 'mixed-fraction-result'></label>
+					<br/>
+					Decimal:
+					<label id = 'decimal-result'></label>
+					<br/>
+				</fieldset>
+			</div>
+			<h3>Circles</h3>
+			<hr/>
+			<div id="bottom-panel" style="width: 850px; height: 500px; overflow: scroll">
+				<canvas id="bottom-canvas" height = "5000px" width = "800px" style = "border: 1px solid black;" />
+			</div>
+		</form>
+		<script src = "js/improperFractions.js"></script> 
+	</body>
+</html>
