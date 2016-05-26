@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Linden Test - Graphical Editor</title>
+		<meta charset = "UTF-8" />
+	</head>
+	<body onload = "initDiagram()">
+		<div style = "display: inline-flex">
+			<div id = "left-panel" style = "float: left">
+				<canvas id = "palette-canvas" height = "650" width = "190" style = "border: 1px solid black;" />
+			</div>
+			<div id = "right-panel" style = "display: inline-block">
+				<canvas id = "diagram-canvas" height = "650" width = "800" style = "border: 1px solid black;" />
+			</div>
+		</div>
+		<script src="js/External/fabric.min.js"></script>
+		<script src = "js/editor.js"></script>
+	</body>
+</html>
